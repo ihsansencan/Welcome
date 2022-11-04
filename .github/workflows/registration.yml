@@ -3,7 +3,7 @@ on:
   issue_comment:
     types: [created]
 
-jobs:
+jobs: 
   ctf_registration:
     runs-on: ubuntu-latest
     if: startsWith(github.event.comment.body, '/join')
